@@ -4,12 +4,12 @@ import React from 'react'
 
  function Navbar() {
   return (
-    <SimpleGrid alignItems="center" color="#fff" bg="black" columns="2" p="4">
-    <GridItem fontSize="1.2rem" fontWeight="bold">
+    <SimpleGrid alignItems="center" color="#fff" bg="black" columns="3" p="4">
+    <GridItem fontSize="2.5rem" fontWeight="bold">
       <RouterLink to="/">Maah.Dev</RouterLink>
     </GridItem>
     <GridItem>
-      <Flex align="center" justify="space-evenly">
+      <Flex align="center" justify="space-between" fontSize="1.3rem">
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/About">About</RouterLink>
         <RouterLink to="/Services">Services</RouterLink>
@@ -17,7 +17,11 @@ import React from 'react'
         <RouterLink to="/Contact">Contact</RouterLink>
       </Flex>
     </GridItem>
-    <GridItem>Connect with Me</GridItem>
+    <Flex  align="flex-end"justify="center" fontSize="1.5rem" ml="4rem"
+     style={{ background: 'linear-gradient(267deg, #ff7e5f, #b923e1)',  borderRadius: '2rem'}}
+     _hover={{ transform: 'scale(1.05)'}}>
+    <GridItem p="2" cursor="pointer">Connect with Me</GridItem>
+    </Flex>
   </SimpleGrid>
   )
 }
