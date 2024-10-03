@@ -14,7 +14,7 @@ import Contact from './components/pages/Contact';
  function App() {
   
   return (
-    <Box w="100vw" bg="black" color="white" >
+    <Box w="100vw" bg="black" color="white" fontFamily="outfit" >
     <Router>
       <Navbar />
       <Routes>
